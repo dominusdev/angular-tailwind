@@ -4,6 +4,9 @@
 
 export const environment = {
   production: false,
+  apiUrl: 'http://localhost:3000/api',
+  clientId: '1234567890',
+  clientSecret: '987654321'
 };
 
 /*

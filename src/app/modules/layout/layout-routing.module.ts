@@ -9,6 +9,21 @@ const routes: Routes = [
     loadChildren: () => import('../dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
+    path: 'invoices',
+    component: LayoutComponent,
+    loadChildren: () => import('../invoices/invoices.module').then((m) => m.InvoicesModule),
+  },
+  {
+    path: 'customers',
+    component: LayoutComponent,
+    loadChildren: () => import('../customer/customer.module').then((m) => m.CustomerModule),
+  },
+  {
+    path: 'products',
+    component: LayoutComponent,
+    loadChildren: () => import('../product/product.module').then((m) => m.ProductModule),
+  },
+  {
     path: 'components',
     component: LayoutComponent,
     loadChildren: () => import('../uikit/uikit.module').then((m) => m.UikitModule),

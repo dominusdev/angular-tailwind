@@ -3,6 +3,28 @@ import { MenuItem } from '../models/menu.model';
 export class Menu {
   public static pages: MenuItem[] = [
     {
+      group: 'Commerce',
+      separator: false,
+      items: [
+        {
+          icon: 'assets/icons/heroicons/outline/bookmark.svg',
+          label: 'Products',
+          route: '/products',
+          expanded: false,
+        },
+        {
+          icon: 'assets/icons/heroicons/outline/users.svg',
+          label: 'Customers',
+          route: '/customers',
+        },
+        {
+          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          label: 'Invoices',
+          route: '/invoices',
+        },
+      ],
+    },
+    {
       group: 'Base',
       separator: false,
       items: [
